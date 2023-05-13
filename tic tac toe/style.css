@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap','https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap' );
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    list-style-type: none;
+}
+.gamecontainer{
+background-color: rgb(237, 237, 124);
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 50px;
+padding: 30px;
+}
+.container{
+display: grid;
+grid-template-columns: repeat(3, 10vw);
+grid-template-rows: repeat(3, 10vw);
+font-family: 'Roboto', sans-serif;
+}
+.box{
+    border: 2px solid black;
+    font-size: 9vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(201, 164, 236);
+}
+.info {
+    font-size: 22px;
+}
+.gameinfo{
+    padding:16px 33px;
+    font-family: 'Poppins', sans-serif;
+}
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+#reset{
+    margin: 0 23px;
+    padding: 6px 18px;
+    background: #f3e7f9;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        padding: 60px 0;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
+
