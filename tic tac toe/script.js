@@ -1,5 +1,4 @@
 console.log("Welcome to Tic Tac Toe")
-let audioTurn = new Audio ("tic tac toe/ting.mp3")
 let turn = "X"
 let isgameover = false;
 
